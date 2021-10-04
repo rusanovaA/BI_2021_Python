@@ -1,5 +1,5 @@
-print("Hello! This is the best Unit Converter of grams to various units of mass" +
-                      "\n" + "You can choose the following units: " + "\n" + "Drachma", "Mina", "Talent", "Shekel", "Uns", "Berkovets", "Dyne")
+print("Hello! This is the best Unit Converter of grams to various units of mass",
+      "\n" + "You can choose the following units: ", "\n" + "Drachma", "Mina", "Talent", "Shekel", "Uns", "Berkovets", "Dyne")
 unit = input("Please, enter the unit: ")
 gramm_value = int(input("Enter the value of grams: "))
 if unit == 'Drachma':
