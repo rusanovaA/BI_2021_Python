@@ -1,6 +1,5 @@
 print("Hello! This is the best Unit Converter of grams to various units of mass" +
-                      "\n" + "You can choose the following units: " + "\n" +
-                      "Drachma", "Mina", "Talent", "Shekel", "Uns", "Berkovets", "Dyne")
+                      "\n" + "You can choose the following units: " + "\n" + "Drachma", "Mina", "Talent", "Shekel", "Uns", "Berkovets", "Dyne")
 unit = input("Please, enter the unit: ")
 gramm_value = int(input("Enter the value of grams: "))
 if unit == 'Drachma':
@@ -23,7 +22,5 @@ elif unit == 'Berkovets':
     print("Berkovets is one of the oldest Russian weight measurement units")
 elif unit == 'Dyne':
     print(gramm_value * 980.67)
-    print("Dyne is a unit of measurement for weight as well as force." +
-          "One dyne is equal to 0.00001 newtons.")
-print("Bye!")    
-    
+    print("Dyne is a unit of measurement for weight as well as force. One dyne is equal to 0.00001 newtons.")
+print("Bye!")
