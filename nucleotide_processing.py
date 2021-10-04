@@ -34,7 +34,8 @@ def reverse_complement(sequence):
         seq_rev_complement = seq_complement[::-1]
         seq_rev_complement_join = ''.join(seq_rev_complement)        
     print(seq_rev_complement_join)
-####
+
+
 true_DNA_nucl = ['A', 'T', 'G', 'C', 'a', 't', 'g', 'c']
 true_RNA_nucl = ['A', 'a', 'U', 'u', 'G', 'C', 'g', 'c']
 true_command = ['transcribe', 'reverse', 'complement', 'reverse complement']
@@ -43,7 +44,7 @@ while True:
     command_name = input("Enter command: ") 
     if command_name not in true_command:
         print("Try again")
-        continue    
+        continue
     if command_name == 'exit':
         print("Good luck")
         break
@@ -53,7 +54,7 @@ while True:
     correct_alphabet_RNA = set(sequence).issubset(true_RNA_nucl)
     if correct_alphabet_DNA is False and correct_alphabet_RNA is False:
         print("Try again")
-        continue    
+        continue
     if command_name == 'transcribe' and correct_alphabet_RNA is True:
         print("Try again")
     elif command_name == 'transcribe':
