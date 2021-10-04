@@ -32,7 +32,7 @@ def reverse_complement(sequence):
     for nucl in sequence:
         seq_complement.append(nucl_complement[nucl])
         seq_rev_complement = seq_complement[::-1]
-        seq_rev_complement_join = ''.join(seq_rev_complement)        
+        seq_rev_complement_join = ''.join(seq_rev_complement)
     print(seq_rev_complement_join)
 
 
@@ -41,7 +41,7 @@ true_RNA_nucl = ['A', 'a', 'U', 'u', 'G', 'C', 'g', 'c']
 true_command = ['transcribe', 'reverse', 'complement', 'reverse complement']
 ###
 while True:
-    command_name = input("Enter command: ") 
+    command_name = input("Enter command: ")
     if command_name not in true_command:
         print("Try again")
         continue
