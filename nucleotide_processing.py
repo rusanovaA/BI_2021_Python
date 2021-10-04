@@ -6,12 +6,14 @@ def transcribe(sequence):
         seq_transcribe.append(nucl_transcribe[nucl])
         seq_transcribe_join = ''.join(seq_transcribe)
     print(seq_transcribe_join)
-####
+
+
 def reverse(sequence):
     reverse_seq = sequence[::-1]
     reverse_seq = ''.join(reverse_seq)
     print(reverse_seq)
-####
+
+
 def complement(sequence):
     nucl_complement = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G', 'a': 't', 't': 'a', 'g': 'c', 'c': 'g', 'U': 'A', 'u': 'a'}
     seq_complement = []
@@ -20,7 +22,8 @@ def complement(sequence):
         seq_complement.append(nucl_complement[nucl])
         seq_complement_join = ''.join(seq_complement)
     print(seq_complement_join)
-####
+
+
 def reverse_complement(sequence):
     nucl_complement = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G', 'a': 't', 't': 'a', 'g': 'c', 'c': 'g', 'U': 'A', 'u': 'a'}
     seq_complement = []
@@ -37,7 +40,7 @@ true_RNA_nucl = ['A', 'a', 'U', 'u', 'G', 'C', 'g', 'c']
 true_command = ['transcribe', 'reverse', 'complement', 'reverse complement']
 ###
 while True:
-    command_name = input("Enter command: ")    
+    command_name = input("Enter command: ") 
     if command_name not in true_command:
         print("Try again")
         continue    
@@ -51,7 +54,7 @@ while True:
     if correct_alphabet_DNA is False and correct_alphabet_RNA is False:
         print("Try again")
         continue    
-    if command_name == 'transcribe' and correct_alphabet_RNA == True:
+    if command_name == 'transcribe' and correct_alphabet_RNA is True:
         print("Try again")
     elif command_name == 'transcribe':
         transcribe(sequence)
