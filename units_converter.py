@@ -25,5 +25,4 @@ elif unit == 'Dyne':
     print(gramm_value * 980.67)
     print("Dyne is a unit of measurement for weight as well as force." +
           "One dyne is equal to 0.00001 newtons.")
-print("Bye!")    
-    
+print("Bye!")
