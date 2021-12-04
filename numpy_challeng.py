@@ -3,7 +3,7 @@ from numpy.linalg import multi_dot
 
 
 def matrix_multiplication(matrix_1, matrix_2):
-    print(np.matmul(n, m))
+    print(np.matmul(matrix_1, matrix_2))
 
 
 def multiplication_check(matrix_list):
@@ -31,6 +31,7 @@ def compute_2d_distance(point1, point2):
 
 def compute_multidimensional_distance(point1, point2):
     print(np.linalg.norm(point1 - point2))
+
 
 def compute_pair_distances(array):
     new_array = array.reshape(array.shape[0], 1, array.shape[1])
