@@ -16,7 +16,6 @@ def consensus_filter(*args):
 
 def conditional_reduce(fun_1, fun_2, num):
     res = []
-    fun_res = []
     for i in range(len(num)):
         if fun_1(num[i]) is True and fun_1(num[i + 1]) is True:
             res.append(fun_2(num[i], num[i + 1]))
