@@ -3,13 +3,13 @@ import numpy as np
 from timeit import default_timer as timer
 import matplotlib.pyplot as plt
 
-#1
+# 1
 
 
 time_random = []
 i = 1
 while i <= 100:
-    start= timer()
+    start = timer()
     rcount = [random.uniform(0, 1) for x in range(i)]
     i += 1
     end = timer()
@@ -19,9 +19,9 @@ while i <= 100:
     time_np = []
     i = 1
     while i <= 100:
-        start= timer()
-        rcount = np.random.uniform(size = i)
-        i +=1
+        start = timer()
+        rcount = np.random.uniform(size=i)
+        i += 1
         end = timer()
         time_i = end-start
         time_np.append(time_i)
@@ -37,7 +37,7 @@ plt.ylabel('Time')
 plt.show()
 
 
-#2
+# 2
 
 
 def if_sort(num_list):
@@ -46,7 +46,7 @@ def if_sort(num_list):
         if num_list[i - 1] <= num_list[i]:
             continue
         else:
-             return "Your list is not sorted"
+            return "Your list is not sorted"
     return "Your list is sorted"
 
 
@@ -54,15 +54,15 @@ time_random_m = []
 time_random_sd = []
 i = 2
 while i <= 100:
-    start= timer()
+    start = timer()
     rcount = sorted(np.random.randint(0, 100, size=i))
     end = timer()
     time_i_1 = end-start
-    start= timer()
+    start = timer()
     rcount = sorted(np.random.randint(0, 100, size=i))
     end = timer()
     time_i_2 = end-start
-    start= timer()
+    start = timer()
     rcount = sorted(np.random.randint(0, 100, size=i))
     end = timer()
     time_i_3 = end-start
@@ -85,7 +85,7 @@ plt.ylabel('Time')
 plt.show()
 
 
-#3
+# 3
 
 
 may_go = [-1, 0, 1]
@@ -99,19 +99,19 @@ stop = path[-1:]
 
 plt.figure(figsize=(10, 5))
 colors = np.random.rand(num_col)
-plt.scatter(path[:,0], path[:,1],c=colors, alpha=0.4)
+plt.scatter(path[:, 0], path[:, 1], c=colors, alpha=0.4)
 plt.title('Random walk with random colors')
 plt.show()
 
 
-#4
+# 4
 
 
-#There could be your advertisement here. Or my triangle.
-#excuse me
+# There could be your advertisement here. Or my triangle.
+# excuse me
 
 
-#5
+# 5
 
 
 my_text = list(input().split())
@@ -120,7 +120,7 @@ for i in my_text:
     if len(i) > 3:
         mod = list(i[1:-1])
         np.random.shuffle(mod)
-        final.append(i[0]+ ''.join(mod) + i[-1])
+        final.append(i[0] + ''.join(mod) + i[-1])
     else:
         final.append(i)
 final_str = ' '.join(final)
