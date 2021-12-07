@@ -2,6 +2,11 @@ import numpy as np
 from numpy.linalg import multi_dot
 
 
+fav_array_1 = np.full(5, 5)
+fav_array_2 = np.ones(5) * 5
+fav_array_3 = np.zeros((5, 5))
+
+
 def matrix_multiplication(matrix_1, matrix_2):
     print(np.matmul(matrix_1, matrix_2))
 
