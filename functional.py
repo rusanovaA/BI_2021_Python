@@ -1,35 +1,32 @@
 def sequential_map(*args):
     num = list(args[-1])
     for arg in args[:-1]:
-        res = list((map(arg, num)))
-        num = res
-    return list(map(int, res))
+        num = list((map(arg, num)))
+    return num
 
 
 def consensus_filter(*args):
     num = list(args[-1])
     for arg in args[:-1]:
-        res = list((filter(arg, num)))
-        num = res
-    return list(map(int, res))
+        num = list((filter(arg, num)))
+    return num
 
 
 def conditional_reduce(fun_1, fun_2, num):
-    res = []
-    for i in range(len(num)):
-        if fun_1(num[i]) is True and fun_1(num[i + 1]) is True:
-            res.append(fun_2(num[i], num[i + 1]))
-        else:
-            continue
-    return sum(res)
-
-
-# I could only come up with non-working functions :(
-
-
-def func_chain_2(*args):
-    return [arg for arg in args]
-
+    num = list((filter(fun_1, num)))
+    res = num[0]
+    if len(num) == 1:
+        return num[0]
+    if len(num) == 0:
+        raise ValueError('Your list is empty')
+    for i in range(len(num) - 1):
+        res = fun_2(res, num[i + 1])
+    return res
 
 def func_chain(*args):
-    return args
+    num = 'Hello'
+    def sequential_map(num):
+        for arg in args:
+            num = arg(num)
+        return num
+    return sequential_map
