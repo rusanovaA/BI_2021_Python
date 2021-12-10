@@ -25,8 +25,8 @@ def conditional_reduce(fun_1, fun_2, num):
 
 
 def func_chain(*args):
-    
-    
+
+
     def sequential_map(num):
         for arg in args:
             num = arg(num)
