@@ -33,4 +33,3 @@ if args.a:
     all_dirs_fils(input_inf)
 else:
     dirs_fils(input_inf)
-
