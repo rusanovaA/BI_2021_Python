@@ -2,7 +2,7 @@
 
 
 import os
-#import sys flake swears, says I don't use this module
+#import sys
 
 
 os.rename(sys.argv[1], sys.argv[2])
