@@ -14,5 +14,5 @@ args = parser.parse_args()
 
 if args.s:
     os.symlink(args.target, args.link)
-esle:
+else:
     os.link(args.target, args.link)
