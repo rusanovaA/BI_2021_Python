@@ -17,7 +17,7 @@ def count_words(input_inf):
     for line in input_inf:
         words += len(line.split(" "))
     sys.stdout.write(str(words))
-            
+
 
 def count_bytes(input_inf):
     sys.stdout.write(sys.getsizeof(input_inf))
@@ -51,4 +51,3 @@ with args.input as input_inf:
         count_lines(input_inf)
         count_words(input_inf)
         count_bytes(input_inf)
-
