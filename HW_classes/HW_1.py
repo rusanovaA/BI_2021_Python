@@ -1,4 +1,4 @@
-import Bio
+#import Bio
 from Bio.Seq import Seq
 from Bio import SeqIO
 import seaborn as sns
