@@ -1,0 +1,9 @@
+# gff3-format
+Reference_10	barrnap:0.9	rRNA	67122	68652	0.0	+	.	Name=16S_rRNA;product=16S ribosomal RNA
+Reference_10	barrnap:0.9	rRNA	68981	72061	0.0	+	.	Name=23S_rRNA;product=23S ribosomal RNA
+Reference_10	barrnap:0.9	rRNA	469298	470826	0.0	+	.	Name=16S_rRNA;product=16S ribosomal RNA
+Reference_10	barrnap:0.9	rRNA	471166	474246	0.0	+	.	Name=23S_rRNA;product=23S ribosomal RNA
+Reference_10	barrnap:0.9	rRNA	3629599	3632680	0.0	-	.	Name=23S_rRNA;product=23S ribosomal RNA
+Reference_10	barrnap:0.9	rRNA	3633020	3634549	0.0	-	.	Name=16S_rRNA;product=16S ribosomal RNA
+Reference_10	barrnap:0.9	rRNA	6168837	6170367	0.0	+	.	Name=16S_rRNA;product=16S ribosomal RNA
+Reference_10	barrnap:0.9	rRNA	6170707	6173787	0.0	+	.	Name=23S_rRNA;product=23S ribosomal RNA
