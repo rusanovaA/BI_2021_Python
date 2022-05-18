@@ -2,6 +2,7 @@ import time
 import random
 import requests
 
+
 def measure_time(func):
     def inner_function(*args, **kwargs):
         start = time.time()
