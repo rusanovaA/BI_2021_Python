@@ -1,5 +1,6 @@
 import time
-
+import random
+import requests
 
 def measure_time(func):
     def inner_function(*args, **kwargs):
@@ -73,3 +74,23 @@ print(func2(1, 2, 3), end="\n\n")
 print(func3(1, 2, c=3, d=2), end="\n\n")
 
 print(func4(a=None, b=float("-inf")), end="\n\n")
+
+
+def russian_roulette_decorator(probability=None, return_value=None):
+    def decorator(func):
+        def inner_func(*args,  **kwargs):
+            if random.random() < probability:
+                return return_value
+            else:
+                return func(*args,  **kwargs)
+        return inner_func
+    return decorator
+
+
+@russian_roulette_decorator(probability=0.2, return_value="Ooops, your output has been stolen")
+def make_request(url):
+    return requests.get(url)
+
+
+for _ in range(10):
+    print(make_request("https://google.com"))
